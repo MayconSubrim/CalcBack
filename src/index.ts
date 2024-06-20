@@ -8,7 +8,7 @@ const port = 3000;
 
 
 const corsOptions = {
-  origin: 'http://localhost:4200', 
+  origin: 'https://calc-front-three.vercel.app/', 
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   preflightContinue: false,
   optionsSuccessStatus: 204
