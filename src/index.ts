@@ -1,8 +1,7 @@
-const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
-const calcRouter = require('./routers/calcRouter');
-
+import express from 'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import calcRouter from './routers/calcRouter';
 
 const app = express();
 const port = 3000;
