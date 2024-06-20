@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
 import { CalcService } from '../services/calcService';
-import { validateNumbers } from '../middlewares/validationMiddleware';
 
 const calcService = new CalcService();
 

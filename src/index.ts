@@ -6,7 +6,12 @@ import calcRouter from './routers/calcRouter';
 const app = express();
 const port = 3000;
 
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:4200', 
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  preflightContinue: false,
+  optionsSuccessStatus: 204
+}));
 app.use(bodyParser.json());
 app.use('/calc', calcRouter);
 
